@@ -3,7 +3,7 @@ public class Flower {
     private String flowerColor;
     private String country;
     private double cost;
-    int lifeSpan;
+    public int lifeSpan;
 
     public String getName() {
         return name;
@@ -74,8 +74,8 @@ public class Flower {
 
     @Override
     public String toString() {
-        return String.format("Название " + name + ". " + "Цвет " + flowerColor + ". " +
-                "Страна " + country + ". " + "Цена %.2f. " +
-                "Простоит " + lifeSpan + " дней.", cost);
+        return String.format("Название " + name + ". Цвет " + flowerColor
+                + ". Страна " + country + ". Цена %.2f. Простоит " + lifeSpan + " дней.", cost);
     }
+
 }
